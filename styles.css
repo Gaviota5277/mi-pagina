@@ -1,56 +1,146 @@
-/* HEADER GENERAL */
-.header {
-    width: 100%;
-    background: #ffffff;
-    border-bottom: 1px solid #eaeaea;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-}
-
-/* CONTENEDOR */
-.header-container {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 15px 40px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-/* LOGO */
-.logo img {
-    height: 55px;
-    object-fit: contain;
-}
-
-/* MENÚ */
-.nav-menu {
-    display: flex;
-    gap: 35px;
-}
-
-.nav-menu a {
-    text-decoration: none;
-    font-size: 15px;
-    font-weight: 300;
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: #FFFFFF;
     color: #333;
-    transition: color 0.3s ease;
 }
 
-.nav-menu a:hover {
-    color: #F57C00; /* Naranja LA GAVIOTA */
-}
+/* --- HEADER ELEGANTE --- */
 
-/* ICONOS */
-.header-icons {
+.header-elegante {
+    background: white;
+    padding: 20px 40px;
     display: flex;
-    gap: 20px;
-    font-size: 20px;
-    cursor: pointer;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #E5E5E5;
 }
 
-.header-icons .icon:hover {
+.logo {
+    height: 70px;
+    width: auto;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 26px;
+    margin: 0;
+    color: #F57C00; /* NARANJA DEL LOGO */
+    font-weight: bold;
+}
+
+.subtitulo {
+    font-size: 14px;
+    font-weight: normal;
+    display: block;
+    margin-top: 3px;
+    color: #555;
+}
+
+.nav-elegante a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.nav-elegante a:hover {
     color: #F57C00;
+}
+
+/* --- HERO ELEGANTE --- */
+
+.hero-elegante {
+    height: 450px;
+    background: url('fondo.jpg') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-texto h2 {
+    font-size: 40px;
+    color: #F57C00;
+    margin-bottom: 10px;
+}
+
+.hero-texto p {
+    font-size: 20px;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 12px 25px;
+    background: #F57C00;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+/* --- SERVICIOS --- */
+
+.servicios {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.servicios h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #F57C00;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 220px;
+    padding: 30px;
+    background: #F5F5F5;
+    border-radius: 12px;
+    font-size: 20px;
+    color: #333;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* --- SOBRE --- */
+
+.sobre {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.sobre h2 {
+    font-size: 32px;
+    color: #F57C00;
+}
+
+/* --- CONTACTO --- */
+
+.contacto {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.contacto h2 {
+    font-size: 32px;
+    color: #F57C00;
+}
+
+/* --- FOOTER --- */
+
+footer {
+    background: #F0F0F0;
+    color: #555;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
 }
