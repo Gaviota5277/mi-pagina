@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #F7F7F7;
+    color: #2D2D2D;
+}
+
+header {
+    background: #1E90FF;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #FF6B35, #1E90FF);
+    color: white;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #00C49A;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.servicios {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.card {
+    width: 200px;
+    padding: 40px 20px;
+    color: white;
+    font-size: 20px;
+    border-radius: 12px;
+    font-weight: bold;
+}
+
+.naranja { background: #FF6B35; }
+.azul { background: #1E90FF; }
+.verde { background: #00C49A; }
+.rosa { background: #FF4F81; }
+
+.sobre, .contacto {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+footer {
+    background: #2D2D2D;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
