@@ -1,65 +1,56 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LA GAVIOTA - Distribuidor de suministros en repostería</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+/* HEADER GENERAL */
+.header {
+    width: 100%;
+    background: #ffffff;
+    border-bottom: 1px solid #eaeaea;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
 
-<header class="header-elegante">
-    <img src="logo.jpg" class="logo" alt="Logo">
+/* CONTENEDOR */
+.header-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 15px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
-    <div class="buscador">
-        <input type="text" placeholder="Buscar producto...">
-        <span class="lupa">🔍</span>
-    </div>
+/* LOGO */
+.logo img {
+    height: 55px;
+    object-fit: contain;
+}
 
-    <h1 class="titulo-principal">
-        LA GAVIOTA
-        <span class="subtitulo">Distribuidor de suministros en repostería</span>
-    </h1>
+/* MENÚ */
+.nav-menu {
+    display: flex;
+    gap: 35px;
+}
 
-    <nav class="nav-elegante">
-        <a href="#inicio">Inicio</a>
-        <a href="#servicios">Servicios</a>
-        <a href="#sobre">Sobre Nosotros</a>
-        <a href="#contacto">Contacto</a>
-    </nav>
-</header>
+.nav-menu a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 300;
+    color: #333;
+    transition: color 0.3s ease;
+}
 
-<section id="inicio" class="hero-elegante">
-    <div class="hero-texto">
-        <h2>Insumos de repostería para tu negocio</h2>
-        <p>Calidad, confianza y servicio personalizado.</p>
-        <a class="btn" href="#contacto">Contáctanos</a>
-    </div>
-</section>
+.nav-menu a:hover {
+    color: #F57C00; /* Naranja LA GAVIOTA */
+}
 
-<section id="servicios" class="servicios">
-    <h2>Nuestros Productos</h2>
-    <div class="cards">
-        <div class="card">Químicos</div>
-        <div class="card">Plásticos</div>
-        <div class="card">Metales</div>
-        <div class="card">Consumibles Industriales</div>
-    </div>
-</section>
+/* ICONOS */
+.header-icons {
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
 
-<section id="sobre" class="sobre">
-    <h2>Sobre Nosotros</h2>
-    <p>Somos un proveedor confiable de insumos para repostería, ofreciendo soluciones rápidas y eficientes.</p>
-</section>
-
-<section id="contacto" class="contacto">
-    <h2>Contacto</h2>
-    <p>Envíanos un mensaje y te responderemos pronto.</p>
-</section>
-
-<footer>
-    <p>© 2026 LA GAVIOTA</p>
-</footer>
-
-</body>
-</html>
+.header-icons .icon:hover {
+    color: #F57C00;
+}
