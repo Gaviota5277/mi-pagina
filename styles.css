@@ -22,7 +22,10 @@ body {
     width: auto;
     margin-bottom: 12px;
 }
-
+.logo {
+    height: 80px !important;
+    width: auto !important;
+}
 .titulo-principal {
     font-size: 30px;
     margin: 0;
