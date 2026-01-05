@@ -5,26 +5,56 @@ body {
     color: #2D2D2D;
 }
 
-header {
+/* --- HEADER VERTICAL ELEGANTE --- */
+
+.header-vertical {
     background: #1E90FF;
     color: white;
-    padding: 15px 30px;
+    padding: 40px 20px;
+    text-align: center;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
 }
 
-.logo {
-    height: 150px;
-    margin-right: 20px;
+.header-vertical .logo {
+    height: 140px;
+    width: auto;
+    margin-bottom: 15px;
 }
 
-nav a {
-    color: white;
-    margin-left: 20px;
-    text-decoration: none;
+.titulo-principal {
+    font-size: 32px;
+    margin: 0;
     font-weight: bold;
 }
+
+.subtitulo {
+    font-size: 18px;
+    font-weight: normal;
+    display: block;
+    margin-top: 5px;
+}
+
+.nav-vertical {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.nav-vertical a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nav-vertical a:hover {
+    text-decoration: underline;
+}
+
+/* --- HERO --- */
 
 .hero {
     text-align: center;
@@ -43,6 +73,8 @@ nav a {
     border-radius: 8px;
     font-weight: bold;
 }
+
+/* --- SERVICIOS --- */
 
 .servicios {
     padding: 60px 20px;
@@ -71,20 +103,18 @@ nav a {
 .verde { background: #00C49A; }
 .rosa { background: #FF4F81; }
 
+/* --- SOBRE Y CONTACTO --- */
+
 .sobre, .contacto {
     padding: 60px 20px;
     text-align: center;
 }
+
+/* --- FOOTER --- */
 
 footer {
     background: #2D2D2D;
     color: white;
     text-align: center;
     padding: 15px;
-}
-.subtitulo {
-    font-size: 16px;
-    font-weight: normal;
-    display: block;
-    margin-top: 5px;
 }
