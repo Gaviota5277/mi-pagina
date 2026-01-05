@@ -18,7 +18,7 @@ body {
 
 /* LOGO CENTRADO */
 .logo {
-    height: 100px;
+    height: 120px;
     width: auto;
     justify-self: center;
 }
@@ -45,7 +45,7 @@ body {
 
 .lupa {
     font-size: 16px;
-    color: #5F57C00;
+    color: #F57C00;
 }
 
 /* MENÚ A LA DERECHA */
