@@ -82,3 +82,9 @@ footer {
     text-align: center;
     padding: 15px;
 }
+.subtitulo {
+    font-size: 16px;
+    font-weight: normal;
+    display: block;
+    margin-top: 5px;
+}
