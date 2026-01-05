@@ -1,137 +1,58 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #F7F7F7;
-    color: #2D2D2D;
-}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LA GAVIOTA - Distribuidor de suministros en repostería</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-/* --- HEADER HORIZONTAL ELEGANTE --- */
+<header class="header-vertical">
+    <img src="logo.jpg" class="logo" alt="Logo">
 
-header {
-    background: #1E90FF;
-    color: white;
-    padding: 15px 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    <h1 class="titulo-principal">
+        LA GAVIOTA
+        <span class="subtitulo">Distribuidor de suministros en repostería</span>
+    </h1>
 
-.logo-titulo {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
+    <nav class="nav-vertical">
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#sobre">Sobre Nosotros</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+</header>
 
-.logo {
-    height: 80px;   /* LOGO A 80px */
-    width: auto;
-}
+<section id="inicio" class="hero">
+    <h2>Suministro de Materias Primas</h2>
+    <p>Conectamos tu negocio con los insumos que impulsan tu crecimiento.</p>
+    <a class="btn" href="#contacto">Contáctanos</a>
+</section>
 
-header h1 {
-    font-size: 26px;
-    margin: 0;
-}
+<section id="servicios" class="servicios">
+    <h2>Nuestros Servicios</h2>
+    <div class="cards">
+        <div class="card naranja">Químicos</div>
+        <div class="card azul">Plásticos</div>
+        <div class="card verde">Metales</div>
+        <div class="card rosa">Consumibles Industriales</div>
+    </div>
+</section>
 
-.subtitulo {
-    font-size: 14px;
-    font-weight: normal;
-    display: block;
-    margin-top: 3px;
-}
+<section id="sobre" class="sobre">
+    <h2>Sobre Nosotros</h2>
+    <p>Somos un proveedor confiable de materias primas, ofreciendo soluciones rápidas, eficientes y personalizadas.</p>
+</section>
 
-nav a {
-    color: white;
-    margin-left: 20px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 16px;
-}
+<section id="contacto" class="contacto">
+    <h2>Contacto</h2>
+    <p>Envíanos un mensaje y te responderemos pronto.</p>
+</section>
 
-nav a:hover {
-    text-decoration: underline;
-}
+<footer>
+    <p>© 2026 LA GAVIOTA</p>
+</footer>
 
-/* --- HERO --- */
-
-.hero {
-    text-align: center;
-    padding: 100px 20px;
-    background: linear-gradient(135deg, #FF6B35, #1E90FF);
-    color: white;
-}
-
-.hero h2 {
-    font-size: 32px;
-    margin-bottom: 10px;
-}
-
-.hero p {
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-
-.btn {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 12px 25px;
-    background: #00C49A;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
-}
-
-/* --- SERVICIOS --- */
-
-.servicios {
-    padding: 60px 20px;
-    text-align: center;
-}
-
-.servicios h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-}
-
-.cards {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-top: 30px;
-}
-
-.card {
-    width: 200px;
-    padding: 40px 20px;
-    color: white;
-    font-size: 20px;
-    border-radius: 12px;
-    font-weight: bold;
-}
-
-.naranja { background: #FF6B35; }
-.azul { background: #1E90FF; }
-.verde { background: #00C49A; }
-.rosa { background: #FF4F81; }
-
-/* --- SOBRE Y CONTACTO --- */
-
-.sobre, .contacto {
-    padding: 60px 20px;
-    text-align: center;
-}
-
-.sobre h2, .contacto h2 {
-    font-size: 26px;
-    margin-bottom: 15px;
-}
-
-/* --- FOOTER --- */
-
-footer {
-    background: #2D2D2D;
-    color: white;
-    text-align: center;
-    padding: 15px;
-}
+</body>
+</html>
