@@ -1,146 +1,65 @@
-body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-    background: #FFFFFF;
-    color: #333;
-}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LA GAVIOTA - Distribuidor de suministros en repostería</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-/* --- HEADER ELEGANTE --- */
+<header class="header-elegante">
+    <img src="logo.jpg" class="logo" alt="Logo">
 
-.header-elegante {
-    background: white;
-    padding: 20px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #E5E5E5;
-}
+    <div class="buscador">
+        <input type="text" placeholder="Buscar producto...">
+        <span class="lupa">🔍</span>
+    </div>
 
-.logo {
-    height: 70px;
-    width: auto;
-}
+    <h1 class="titulo-principal">
+        LA GAVIOTA
+        <span class="subtitulo">Distribuidor de suministros en repostería</span>
+    </h1>
 
-.titulo-principal {
-    text-align: center;
-    font-size: 26px;
-    margin: 0;
-    color: #F57C00; /* NARANJA DEL LOGO */
-    font-weight: bold;
-}
+    <nav class="nav-elegante">
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#sobre">Sobre Nosotros</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+</header>
 
-.subtitulo {
-    font-size: 14px;
-    font-weight: normal;
-    display: block;
-    margin-top: 3px;
-    color: #555;
-}
+<section id="inicio" class="hero-elegante">
+    <div class="hero-texto">
+        <h2>Insumos de repostería para tu negocio</h2>
+        <p>Calidad, confianza y servicio personalizado.</p>
+        <a class="btn" href="#contacto">Contáctanos</a>
+    </div>
+</section>
 
-.nav-elegante a {
-    margin-left: 25px;
-    text-decoration: none;
-    color: #333;
-    font-size: 16px;
-    font-weight: 500;
-}
+<section id="servicios" class="servicios">
+    <h2>Nuestros Productos</h2>
+    <div class="cards">
+        <div class="card">Químicos</div>
+        <div class="card">Plásticos</div>
+        <div class="card">Metales</div>
+        <div class="card">Consumibles Industriales</div>
+    </div>
+</section>
 
-.nav-elegante a:hover {
-    color: #F57C00;
-}
+<section id="sobre" class="sobre">
+    <h2>Sobre Nosotros</h2>
+    <p>Somos un proveedor confiable de insumos para repostería, ofreciendo soluciones rápidas y eficientes.</p>
+</section>
 
-/* --- HERO ELEGANTE --- */
+<section id="contacto" class="contacto">
+    <h2>Contacto</h2>
+    <p>Envíanos un mensaje y te responderemos pronto.</p>
+</section>
 
-.hero-elegante {
-    height: 450px;
-    background: url('fondo.jpg') center/cover no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
+<footer>
+    <p>© 2026 LA GAVIOTA</p>
+</footer>
 
-.hero-texto h2 {
-    font-size: 40px;
-    color: #F57C00;
-    margin-bottom: 10px;
-}
-
-.hero-texto p {
-    font-size: 20px;
-    color: #444;
-    margin-bottom: 20px;
-}
-
-.btn {
-    padding: 12px 25px;
-    background: #F57C00;
-    color: white;
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: bold;
-}
-
-/* --- SERVICIOS --- */
-
-.servicios {
-    padding: 80px 20px;
-    text-align: center;
-}
-
-.servicios h2 {
-    font-size: 32px;
-    margin-bottom: 40px;
-    color: #F57C00;
-}
-
-.cards {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    flex-wrap: wrap;
-}
-
-.card {
-    width: 220px;
-    padding: 30px;
-    background: #F5F5F5;
-    border-radius: 12px;
-    font-size: 20px;
-    color: #333;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-/* --- SOBRE --- */
-
-.sobre {
-    padding: 80px 20px;
-    text-align: center;
-}
-
-.sobre h2 {
-    font-size: 32px;
-    color: #F57C00;
-}
-
-/* --- CONTACTO --- */
-
-.contacto {
-    padding: 80px 20px;
-    text-align: center;
-}
-
-.contacto h2 {
-    font-size: 32px;
-    color: #F57C00;
-}
-
-/* --- FOOTER --- */
-
-footer {
-    background: #F0F0F0;
-    color: #555;
-    text-align: center;
-    padding: 20px;
-    font-size: 14px;
-}
+</body>
+</html>
