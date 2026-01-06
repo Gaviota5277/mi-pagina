@@ -2,16 +2,15 @@
     box-sizing: border-box;
 }
 
+:root {
+    --naranja: #F57C00;
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background: #ffffff;
     color: #333;
-}
-
-/* COLOR CORPORATIVO */
-:root {
-    --naranja: #F57C00;
 }
 
 /* HEADER */
@@ -38,7 +37,7 @@ body {
 
 .lupa {
     font-size: 18px;
-    color: var(--naranja); /* LUPA NARANJA */
+    color: var(--naranja);
 }
 
 .header-center {
@@ -56,8 +55,32 @@ body {
 .header-right a {
     text-decoration: none;
     color: var(--naranja);
-    font-size: 16px;
     font-weight: bold;
+}
+
+/* MENÚ CATEGORÍAS */
+.menu-categorias {
+    width: 220px;
+    padding: 20px;
+    background: #fafafa;
+    border-right: 1px solid #e5e5e5;
+}
+
+.menu-categorias a {
+    display: block;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    background: var(--naranja);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.menu-categorias a:hover {
+    opacity: 0.85;
 }
 
 /* HERO */
@@ -79,7 +102,6 @@ body {
 .hero h1 {
     font-size: 36px;
     color: var(--naranja);
-    margin-bottom: 10px;
 }
 
 .hero p {
@@ -94,10 +116,6 @@ body {
     border-radius: 6px;
     text-decoration: none;
     font-weight: bold;
-}
-
-.btn:hover {
-    opacity: 0.85;
 }
 
 /* PRODUCTOS */
@@ -126,11 +144,6 @@ body {
     border-radius: 12px;
     font-size: 20px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    transition: 0.3s;
-}
-
-.producto:hover {
-    transform: translateY(-6px);
 }
 
 /* ABOUT */
@@ -142,7 +155,6 @@ body {
 .about h2 {
     font-size: 32px;
     color: var(--naranja);
-    margin-bottom: 20px;
 }
 
 /* CONTACTO */
@@ -157,28 +169,8 @@ body {
     color: var(--naranja);
 }
 
-.contacto-info {
-    margin-top: 30px;
-}
-
 .contacto-info p {
     font-size: 20px;
-    margin: 15px 0;
-}
-
-.contacto-info a {
-    color: var(--naranja);
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.contacto-info a:hover {
-    text-decoration: underline;
-}
-
-.icono-ws {
-    font-size: 24px;
-    margin-right: 8px;
 }
 
 /* FOOTER */
@@ -191,25 +183,27 @@ footer {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
+    .menu-categorias {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        border-right: none;
+        border-bottom: 1px solid #e5e5e5;
+    }
+
+    .menu-categorias a {
+        width: 45%;
+        margin: 5px;
+    }
+
     .header {
         grid-template-columns: 1fr;
-        gap: 15px;
         text-align: center;
-    }
-
-    .buscador {
-        justify-content: center;
-    }
-
-    .buscador input {
-        width: 100%;
+        gap: 15px;
     }
 
     .logo {
         height: 110px;
-    }
-
-    .hero h1 {
-        font-size: 26px;
     }
 }
