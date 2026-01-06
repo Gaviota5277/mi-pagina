@@ -21,7 +21,7 @@ body {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     align-items: center;
-    padding: 20px 40px;
+    padding: 15px 40px;
     background: var(--crema-header);
     border-bottom: 2px solid var(--naranja);
 }
@@ -42,4 +42,39 @@ body {
 }
 
 .lupa {
-    font-size: 18px
+    font-size: 18px;
+    color: var(--naranja);
+}
+
+/* LOGO */
+.header-center {
+    text-align: center;
+}
+
+.logo {
+    height: 120px;
+    max-width: 100%;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+/* CONTACTO HEADER */
+.header-right {
+    text-align: right;
+}
+
+.header-right a {
+    text-decoration: none;
+    color: var(--naranja);
+    font-weight: bold;
+}
+
+/* ================= MENÚ CATEGORÍAS ================= */
+.menu-categorias {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    padding: 12px;
+    background: #ffffff;
+    border-bottom: 1px solid #e5e5e5;
